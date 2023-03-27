@@ -23,4 +23,11 @@ public class UserRegTest {
     }
 
 
+    @Test
+    void whenGivenValidPhoneNumberShouldReturnTrue() {
+        boolean validatePhoneNumber = userReg.validatePhoneNumber("+91 9919819801");
+        Assertions.assertEquals(true, validatePhoneNumber);
+    }
+
+
 }
