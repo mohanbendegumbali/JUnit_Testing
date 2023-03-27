@@ -11,5 +11,11 @@ public class UserReg {
         Matcher matcher = pattern.matcher(firstName);
         return matcher.matches();
     }
+
+    public boolean validateLastName(String lastName) {
+        Pattern pattern = Pattern.compile(validName);
+        Matcher matcher = pattern.matcher(lastName);
+        return matcher.matches();
+    }
 }
 

@@ -8,4 +8,12 @@ public class UserRegTest {
         boolean validName = userReg.validateFirstName("Mohan");
         Assertions.assertEquals(true,validName );
     }
+
+    @Test
+    void whenGivenValidLastNameShouldReturnTrue() {
+        boolean validName = userReg.validateFirstName("Kumar");
+        Assertions.assertEquals(true, validName);
+    }
+
+
 }
