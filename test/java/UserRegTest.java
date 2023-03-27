@@ -16,4 +16,11 @@ public class UserRegTest {
     }
 
 
+    @Test
+    void whenGivenValidEmailShouldReturnTrue() {
+        boolean validateEmail = userReg.validateEmail("mohanb0311@gmail.com");
+        Assertions.assertEquals(true, validateEmail);
+    }
+
+
 }
